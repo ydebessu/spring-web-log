@@ -38,6 +38,7 @@ class CustomLogstashEncoderTest {
         ObjectMapper mapper = new ObjectMapper();
         HashMap<String, String> map =  mapper.readValue(capturedOutput, typeRef);
 
+
         Assertions.assertNotNull(map.get("@timestamp"));
     }
 }
